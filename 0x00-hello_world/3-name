@@ -1,5 +1,2 @@
 #!/bin/bash
 gcc $CFILE -o cisfun
-git add .
-git commit -m '3-name'
-git push
