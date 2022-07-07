@@ -1,16 +1,18 @@
 #include "main.h"
 /**
- * print_alphabet-print the alphabet
+ * print_alphabet-print out alphabets
+ *
+ *Return: always 0
  */
 void print_alphabet(void)
 {
-char a='a';
+	char alpha = 97;
 
-while (a <-'z')
-{
-_putchar(a);
-++a;
-}
+	while (alpha < 123)
+	{
+		_putchar(alpha);
+		alpha++;
+	}
 
-_putchar(10);
+	_putchar('\n');
 }
