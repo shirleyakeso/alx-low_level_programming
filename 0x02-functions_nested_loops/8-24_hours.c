@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * jack_bauer-function- prints every minute of the day
+ * jack_bauer - prints every minute of the day
  */
 void jack_bauer(void)
 {
@@ -20,6 +20,7 @@ void jack_bauer(void)
 		_putchar(m1 + '0');
 		_putchar(m2 + '0');
 		_putchar(10);
+		_putchar('\n');
 		}
 		min = 0;
         	}
