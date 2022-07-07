@@ -1,20 +1,15 @@
 #include "main.h"
 /**
- * _islower - function
+ * _islower - checks for lower case characters
  *
- *@c: the character to evaluate
+ * Return: returns 1 if c is lower.
  *
- * Return: Get 1 if c is uppercase,
- * gey 0 otherwise
+ * @c: value to be tested.
  */
-int_islower(int c)
+int _islower(int c)
 {
-if (c >= 97 && c <= 122)
-{
-return (1);
-}
-else
-{
-return (0);
-}
+	if (c >= 97 && c <= 123)
+		return (1);
+	else
+		return (0);
 }
