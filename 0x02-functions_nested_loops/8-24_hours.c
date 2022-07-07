@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * jack_bauer- function
+ * jack_bauer-function- prints every minute of the day
  */
 void jack_bauer(void)
 {
