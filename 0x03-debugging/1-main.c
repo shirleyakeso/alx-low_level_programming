@@ -7,10 +7,11 @@
 
 int main(void)
 {
-	/* int i;*/
+	int i;
+
 	printf("infinte loop incoming: (\n");
+	i = 0;
 	/**
-	 * i = 0;
 	 *while (i < 10)
 	 *{
 	 *putchar (i);
