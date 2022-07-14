@@ -34,7 +34,7 @@ void print_times_table(int n)
 					_putchar(second + '0');
 			}
 			_putchar(third + '0');
-		        if (j == n)
+		       	if (j == n)
 			{
 					_putchar('\n');
 			}
