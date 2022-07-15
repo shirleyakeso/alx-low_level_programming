@@ -1,23 +1,29 @@
-#include "main.h"
-
+#include "holberton.h"
 /**
-* leet - encodes a string into 1337
-* @s: string to encode
+* leet - encodes a string
+* @str: the string to encode
 *
-* Return: address of s
+* Return: the encode string
 */
-char *leet(char *s)
+char *leet(char *str)
 {
 int i, j;
-char a[] = "aAeEoOtTlL";
-char b[] = "4433007711";
+char c[] = "aAeEoOtTlL";
+char n[] = "4433007711";
 
-for (i = 0; *(s + i); i++)
-for (j = 0; j <= 9; j++)
+i = 0;
+while (str[i] != '\0')
 {
-if (a[j] == s[i])
-s[i] = b[j];
+j = 0;
+while (c[j] != '\0')
+{
+if (str[i] == c[j])
+{
+str[i] = n[j];
 }
+j++;
 }
-return (s);
+i++;
+}
+return (str);
 }
