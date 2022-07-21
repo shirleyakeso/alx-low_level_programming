@@ -4,7 +4,7 @@
  * is_palindrome - checks if a word is a palindrome
  * @s: word to be checked
  * Return: 1 if palindrome
-*/
+ */
 
 int is_palindrome(char *s)
 {
