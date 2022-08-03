@@ -1,50 +1,119 @@
 #include "3-calc.h"
 
-/**
- * get_op_func - get the operator function
- * @s: operator passed as argument to the program
- *
- * Return: Always 0 (Success)
- */
+#include <stdlib.h>
 
-int (*get_op_func(char *s))(int, int)
+#include <stdio.h>
+
+
+
+/**
+  * op_add - ...
+  * @a: ...
+  * @b: ...
+  *
+  * Return: ...
+  */
+
+int op_add(int a, int b)
 
 {
 
-	op_t ops[] = {
+	return (a + b);
 
-		{"+", op_add},
-
-		{"-", op_sub},
-
-		{"*", op_mul},
-
-		{"/", op_div},
-
-		{"%", op_mod},
-
-		{NULL, NULL}
-
-	};
-
-	int i;
+}
 
 
 
-	i = 0;
+/**
+  * op_sub - ...
+  * @a: ...
+  * @b: ...
+  *
+  * Return: ...
+  */
 
-	while (ops[i].op)
+int op_sub(int a, int b)
+
+{
+
+	return (a - b);
+
+}
+
+
+
+/**
+  * op_mul - ...
+  * @a: ...
+  * @b: ...
+  *
+  * Return: ...
+  */
+
+int op_mul(int a, int b)
+
+{
+
+	return (a * b);
+
+}
+
+
+
+/**
+  * op_div - ...
+  * @a: ...
+  * @b: ...
+  *
+  * Return: ...
+  */
+
+int op_div(int a, int b)
+
+{
+
+	if (b == 0)
 
 	{
 
-		if (*(ops[i].op) == *s && *(s + 1) == '\0')
+		printf("Error\n");
 
-			return (ops[i].f);
-
-		i++;
+		exit(100);
 
 	}
 
-	return (0);
+
+
+	return (a / b);
+
+}
+
+
+
+/**
+  * op_mod - ...
+  * @a: ...
+  * @b: ...
+  *
+  * Return: ...
+  */
+
+int op_mod(int a, int b)
+
+{
+
+	if (b == 0)
+
+	{
+
+		printf("Error\n");
+
+		exit(100);
+
+	}
+
+
+
+	return (a % b);
 
 }
