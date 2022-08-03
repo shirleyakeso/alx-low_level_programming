@@ -1,11 +1,17 @@
 #include "3-calc.h"
 
+#include <stdlib.h>
+
+#include <string.h>
+
+
+
 /**
- * get_op_func - get the operator function
- * @s: operator passed as argument to the program
- *
- * Return: Always 0 (Success)
- */
+  * get_op_func - ...
+  * @s: ...
+  *
+  * Return: ...
+  */
 
 int (*get_op_func(char *s))(int, int)
 
@@ -13,37 +19,39 @@ int (*get_op_func(char *s))(int, int)
 
 	op_t ops[] = {
 
-		{"+", op_add},
+	{ "+", op_add },
 
-		{"-", op_sub},
+	{ "-", op_sub },
 
-		{"*", op_mul},
+	{ "*", op_mul },
 
-		{"/", op_div},
+	{ "/", op_div },
 
-		{"%", op_mod},
+	{ "%", op_mod },
 
-		{NULL, NULL}
+	{ NULL, NULL }
 
 	};
 
-	int i;
+	int i = 0;
 
 
 
-	i = 0;
-
-	while (ops[i].op)
+	while (i < 5)
 
 	{
 
-		if (*(ops[i].op) == *s && *(s + 1) == '\0')
+		if (strcmp(s, ops[i].op) == 0)
 
 			return (ops[i].f);
+
+
 
 		i++;
 
 	}
+
+
 
 	return (0);
 
