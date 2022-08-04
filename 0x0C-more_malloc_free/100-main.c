@@ -48,7 +48,7 @@ i = 0;
 while (i < 98)
 p[i++] = 98;
 }
-simple_print_buffer(p, 98);
-free(p);
+simple_print_buffer( p, 98 );
+free (p);
 return (0);
 }
