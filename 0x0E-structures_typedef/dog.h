@@ -1,38 +1,29 @@
-#ifndef DOG_H
+#ifndef pet
 
-#define DOG_H
-
-
+#define pet
 
 /**
- * struct dog - a structure dog
- * numbers does not carry *
- * @name: name of dog
- * @age: age of dog
- * @owner: owner of dog
+ *
+ *  * struct dog - define a new type of struct
+ *
+ *   * @name: name's dog
+ *
+ *    * @age: age's dog
+ *
+ * @owner: owner's dog
  */
 
-struct dog
+typedef struct dog
 
 {
 
-	char *name;
+		char *name;
 
-	float age;
+			float age;
 
-	char *owner;
+				char *owner;
 
-};
-
-
-
-/**
- * dog_t - Typedef for struct dog
- */
-
-typedef struct dog dog_t;
-
-
+} dog_t;
 
 void init_dog(struct dog *d, char *name, float age, char *owner);
 
@@ -41,7 +32,5 @@ void print_dog(struct dog *d);
 dog_t *new_dog(char *name, float age, char *owner);
 
 void free_dog(dog_t *d);
-
-
 
 #endif
