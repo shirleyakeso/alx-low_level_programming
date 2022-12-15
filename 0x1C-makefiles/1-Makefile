@@ -1,0 +1,13 @@
+# this target compiles all files
+
+
+
+CC=gcc
+
+SRC=school.c main.c
+
+
+
+all:
+
+	$(CC) $(SRC) -o school
