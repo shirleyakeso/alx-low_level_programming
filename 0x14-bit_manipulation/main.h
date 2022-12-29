@@ -23,11 +23,3 @@ int get_endianness(void);
 
 
 #endif /* _MAIN_H_ */
-
-Footer
-
-© 2022 GitHub, Inc.
-
-Footer navigation
-
-Terms
